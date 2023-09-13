@@ -35,3 +35,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+#norgen-logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
