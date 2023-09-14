@@ -53,3 +53,11 @@ a:hover {
     display: block;
     margin: 0 auto;
 }
+
+#job-description ul {
+    padding-left: 40px; /* Adjust this value as per your requirement */
+}
+
+#job-description li {
+    padding-left: 10px; /* This adds a little padding before each list item, can adjust as needed */
+}
