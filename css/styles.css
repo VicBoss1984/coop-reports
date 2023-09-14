@@ -37,13 +37,19 @@ a:hover {
 }
 
 #norgen-logo {
-    max-width: 200px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
 }
 
 #goals-photo {
-    max-width: 200px;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#job-response-photo {
+    max-width: 400px;
     display: block;
     margin: 0 auto;
 }
