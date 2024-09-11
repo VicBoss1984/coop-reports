@@ -48,6 +48,12 @@ a:hover {
     margin: 0 auto;
 }
 
+#uofg-logo {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
 #goals-photo {
     max-width: 400px;
     display: block;
