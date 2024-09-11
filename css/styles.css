@@ -61,6 +61,12 @@ a:hover {
     margin: 0 auto;
 }
 
+#labyrinth-goals-photo {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
 #job-response-photo {
     max-width: 400px;
     display: block;
