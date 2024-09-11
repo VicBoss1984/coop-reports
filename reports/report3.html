@@ -86,6 +86,15 @@
 			<p>
 				The goal, from the outset, was to combine and simplify the usage of traditional GWAS tools with contemporary and effective ML tools. The means of getting to this goal were defined from the outset when I began working on the project: to use docker, the excellent Golang programming language, and the superb Cobra CLI library to build the best possible CLI interface for this proposed pipeline. The end-goal was to have a working prototype that allows the user, with minimal configuration and installation, to easily run any type of GWAS analysis on their genomic and phenotype input data using the CLI. The results that the user would receive as output from the system would be a collection of identified SNPs that the user would then use as key markers for future genomic research. Some applications of the output that our proposed pipeline would have produced would centre on: biomedical engineering, gene therapy research, and genomic research. Much of the work that our proposed pipeline does is aimed at making the task of finding critical regions of the genome as easy and as feasible as possible.
 			</p>
+
+			<p>
+				While the theoretical foundation of the work was rock solid, the issues with the existing 'PentaPen' codebase were numerous and very challenging. The issues made it impossible to integrate the 'PentaPen' ML toolkit into a singular, cohesive CLI pipeline, as described earlier. The 'PentaPen' ML toolkit, as a result, required a ton of bug fixes and refactoring to become somewhat stable and usable. Basically, and due to the proliferation of integration and usability issues with the existing 'PentaPen' ML toolkit that we inherited for this project, we spent the vast majority of the project's development testing, finding bugs and defects, and fixing said bugs and defects as they appeared. While the end-result was very promising (and at-least usable): we did manage to get the 'PentaPen' ML toolkit to become much more stable and easier-to-use than when we first inherited and used it, but it still had a small amount of fatal bugs and code defects that made the remaining group-based machine learning methods unusable.
+			</p>
+
+			<p>
+				At the end of my work-term, myself and Dr. Yan decided to cease work on fixing and testing the 'PentaPen' ML toolkit, and to shift our development resources into researching and integrating existing useful deep-learning methods as a replacement for the 'PentaPen' ML toolkit. The focus of the research project is still the same as before; the only change was we now had to work on finding a suitable deep-learning model for performing GWAS in parallel to the established GWAS tools. Once a deep-learning model is found (which we are very close to doing, as of the time of writing and publishing this report) found, we will integrate it into our existing ecosystem for the Cobra-based CLI pipeline.
+			</p>
+
 		</section>
 
         <section id="goals">
