@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Guelph Research Assistant Work-Term Report (Summer of 2024)</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>University of Guelph Research Assistant Work-Term Report (Summer of 2024)</h1>
+    </header>
+
+    <main>
+        <section id="abstract">
+                <h2>Abstract/Introduction</h2>
+                <p>
+                    This report will describe my experience working as an undergraduate research assitant (URA) with Doctor Yan in the summer of 2024.
+
+                    I will be highlighting the research project's outline/goals, how it changed throughout the work-term, and draw upon key lessons learned from the work-term.
+
+                    This report will help anyone interested working in the field of computer science research what it is like working as a researcher at the University of Guelph's computer science department.
+
+                    Sections down the line will delve into the learning objectives that I had developed during the work-term, the reflections I made with respect to the learning goals, and details about job description and what I did as a researcher in the School of Computer Science (SoCS) at the University of Guelph.
+                </p>
+        </section>
+
+        <section id="employer-info">
+            <h2>Information about the Employer</h2>
+            <img src="../images/uofg_logo2.png" alt="Oriole AI Logo" id="orioleai-logo">
+            <p>
+                The University of Guelph was first established in 1964, but it was not until 1971 that the School of Computer Science (SoCS) (where I worked) was founded. For much of the report, I will be focused on describing SoCS rather than the university as a whole. Nonetheless, the University of Guelph is a research intensive and comprehensive academic institution known for its safe campus, noteworthy presence in various quality science journals, and a relentless focus on student experience.
+
+                The University of Guelph is, well, in Guelph, Ontario, Canada. The closest and most notable road to the University is Stone Road, which itself is a massive road that leads to a variety of interesting landmarks within Guelph (not including the University, of course).
+            </p>
+            <p>
+                Through various means and methods, the University's, and all of the colleges that it collects under its one roof, ultimate mission is: improve life.
+
+		How the University improves life comes down to its, as mentioned before, its heavy and quality research output and its emphasis on admitting and educating the best students that Canada and the rest of the world have to offer. Many notable Professors work in the university's various colleges, and many more have an impressive research track record. As for students, look no further than the quality and diverse array of the University's alumni crop to see them working on some of the most exciting and challenging academic and industrial fields in the current world. For instance: Doctor Stefan Kremer is a renowned machine learning expert, and his research into machine learning itself and its practical applications in solving difficult enviromental challenges is well documented. In-fact, Doctor Kremer is a University of Guelph alumni, as he did his undergraduate degree in computer science and then went on to obtain his PhD in computer science at the University of Alberta. He now teaches and performs research in the field of machine learning in the School of Computer Science at the University of Guelph.
+
+		On the academic side, the University earns the right to be labeled as a "comprehensive" university because it houses several academic departments. For instance: the University houses the following great departments: a Psychology department, a Social Sciences department, a Music and Arts department, an Engineering department that houses a wide array of engineering disciplines, a Computer Science department, an Agriculture department, and, finally, a Veterinary School.
+            </p>
+            <p>
+		The School of Computing itself is home to six main branches of computer science research: machine learning, bioinformatics, education, cyber-security, human computer interaction (HCI), and theoretical computer science. My supervisor's, Doctor Yan Yan, primary area of research was bioinformatics, and especially the usage of machine learning to solve complicated and difficult bioinformatics problems. Working in bioinformatics was not novel to me; I worked in an industry position as a first-time co-op student in the summer of 2023 for Norgen Biotek Corporation, but the problems that I solved and the tools that I learned to solve them during my stint as a research assistant to Dr. Yan were novel, interesting, and quite challenging to me. We primarily worked on finding better alternatives and solutions to performing genome-wide association studies (GWAS) using machine learning as the main toolkit to do so (more on this later).
+
+		While the research intensity of the SoCS department cannot be understated, its teaching prowess is nothing to scoff at. Considering the quantity and quality of the students that learn under the roof and guidance of SoCS, it remains an impressive feat just how effective and efficient the SoCS department is at producing a sublime crop of students that come through its doors. The SoCS department is also home to the excellent SoCS co-operative education department, which handles the co-op needs of computer science students. While the co-op department is, technically, a smaller and a sub-department of the SoCS, its influence is nothing short of incredible. Many students who are registered in the co-op program while doing their undergraduate degree in computing at the University end up being matched with some of the finest and most noteworthy employers in Canada (some even end up working for Facebook, Google, Amazon, Netflix, and Microsoft). I personally know of a decent amount of co-op students in the computer science program who are working for Canada's largest banks, namely: the Royal Bank of Canada (RBC) and the Toronto-Dominion Bank Group (TD Bank).
+            </p>
+            <p>
+                The research project that I worked on with my supervisor, Doctor Yan, was developing a user-friendly, command-line interface (CLI) pipeline for combining traditional GWAS tools (such as GAPIT, TASSEL, and PLINK) with an existing machine learning toolkit specifically designed for GWAS work.
+
+		The specific machine learning (ML) toolkit that we used and worked on was 'PentaPen'. 'PentaPen' was a machine learning toolkit developed by Nikita Kohli as part of her Master's thesis in data science when she was a student at Thompson Rivers University. The ML toolkit was specifically designed to work with GWAS data, and its development was finished over a few months ago. We inherited this ML toolkit because: according to the Kohli and colleagues (2024) conference paper on the specifics of 'PentaPen', the benefits and precision of using ML tools to perform GWAS work are impossible to deny. Given the importance of the role that GWAS plays in the field of genomic research, especially in the contemporary bioinformatics world with the prevalence of computational methods for finding relevant single-nucleotide polymorphisms (SNPs) in extremely large genomes., finding and developing better ways of performing GWAS is a key and active area of research in bioinformatics.
+
+		The goal, from the outset, was to combine and simplify the usage of traditional GWAS tools with contemporary and effective ML tools. The means of getting to this goal were defined from the outset when I began working on the project: to use docker, the excellent Golang programming language, and the superb Cobra CLI library to build the best possible CLI interface for this proposed pipeline. The end-goal was to have a working prototype that allows the user, with minimal configuration and installation, to easily run any type of GWAS analysis on their genomic and phenotype input data using the CLI. The results that the user would receive as output from the system would be a collection of identified SNPs that the user would then use as key markers for future genomic research. Some applications of the output that our proposed pipeline would have produced would centre on: biomedical engineering, gene therapy research, and genomic research. Much of the work that our proposed pipeline does is aimed at making the task of finding critical regions of the genome as easy and as feasible as possible.
+            </p>
+            <p>
+                By integrating these advanced AI models with sensory inputs and interactive capabilities, Oriole A.I. aims to develop AI systems that are not just analytically proficient but also capable of understanding and interacting with the world in a way that feels more natural and intuitive.
+
+                This represents a significant shift from traditional AI approaches, paving the way for more dynamic, responsive, and intelligent systems that resonate with the ethos of embodied AI.
+            </p>
+            <p>
+                In summary, Oriole A.I. is not just a company but a visionary entity.
+
+                It is a place where the lines between engineering and philosophy blur to create AI solutions that are not just technologically advanced but also aligned with a deeper understanding of human essence and needs.
+
+                As the company moves forward, it continues to redefine the boundaries of AI, making significant contributions to both the field and to the communities it serves.
+            </p>
+            <p>
+                During my work-term at Oriole A.I., I was involved in two main divisions.
+
+                In the first half of the term, I was part of the Research and Development department, where my role primarily focused on backend development.
+
+                This involved working extensively with Python and two undisclosed cloud computing platforms, contributing significantly to the development of backend or server-side application features.
+
+                Transitioning to the second half of my term, my focus shifted exclusively to mobile application development.
+
+                Here, I engaged in developing the 'Oriole A.I.' Android application, where I not only honed my skills in Android app development but also learned and applied Kotlin extensively.
+
+                Further details about the specific projects and contributions I made during my tenure at Oriole A.I. will be discussed later in this report.
+            </p>
+        </section>
+
+        <section id="goals">
+            <h2>GOALS AND THEIR DETAILS</h2>
+            <img src="../images/goals_photo_oriole.jpg" alt="Generic Photo of a Soccer Goal" id="goals-photo">
+
+            <!-- Learning Goal 1 -->
+            <h4>Learning Goal 1</h4>
+            <p> Design and Implement Novel Features for the Oriole A.I. mobile applications</p>
+            <h4>Action Plan 1</h4>
+            <ol>
+                <li>Ideate at least three new potential features or improvements for the 'smart crop' technology every month.</li>
+                <li>Prototype the most promising idea and solicit feedback from the development team.</li>
+                <li>Refine and test the chosen idea through iterative development cycles.</li>
+            </ol>
+            <h4>Measure of Success 1</h4>
+            <p>
+                The successful design and implementation of a novel feature for the 'smart crop' functionality that is validated by the development team and is ready for A/B testing with users.
+
+                For other new features, the positive feedback from the development team and the user-base as well proof of the new features' utility in the field.
+            </p>
+            <h4>Reflection 1</h4>
+            <p>
+                Reflecting on this goal, I recognize the importance of blending creativity with practicality in technology.
+
+                My efforts in ideating and prototyping new features for the 'smart crop' technology reflect a dedication to innovative thinking.
+
+                The process of iterative development, coupled with team feedback, was invaluable in refining my ideas into functional features.
+
+                The successful integration of a novel feature into our 'smart crop' functionality, validated by the team and prepared for A/B testing, showcases not just technical skill but also the ability to think outside the box and contribute meaningful improvements.
+
+                This journey was a testament to the potential of creative thinking in technology solutions.
+            </p>
+
+            <!-- Learning Goal 2 -->
+            <h4>Learning Goal 2</h4>
+            <p> Master Backend Technologies</p>
+            <h4>Action Plan 2</h4>
+            <ol>
+                <li>Create a weekly study plan to delve deep into one aspect of each technology.</li>
+                <li>Document insights and understanding, and share these findings with the team.</li>
+                <li>Apply learned concepts to enhance the 'smart crop' feature or troubleshoot issues/bugs.</li>
+            </ol>
+            <h4>Measure of Success 2</h4>
+            <p>
+                The successful development of the ability to independently solve complex issues and enhance features using a variety of cloud-based technologies and advanced AI APIs, demonstrated by successful project outcomes.
+            </p>
+            <h4>Reflection 2</h4>
+            <p>
+                Mastering backend technologies was a challenging yet fulfilling journey.
+
+                Dedicating weekly study sessions to delve into various cloud-based services and advanced AI APIs allowed me to deepen my understanding of these sophisticated platforms.
+
+                Sharing my insights with the team not only consolidated my knowledge but also fostered a collaborative learning environment.
+
+                Applying these concepts to enhance certain advanced features and troubleshoot issues has proven my capability to independently address complex technical challenges.
+
+                This goal's attainment, though demanding, has significantly bolstered my backend technology proficiency, reinforcing the depth and breadth of my understanding.
+            </p>
+
+            <!-- Learning Goal 3 -->
+            <h4>Learning Goal 3</h4>
+            <p>Optimize the 'Smart Crop' Feature</p>
+            <h4>Action Plan 3</h4>
+            <ol>
+                <li>Set up a metrics dashboard to monitor the feature's performance.</li>
+                <li>Conduct weekly reviews of performance data to identify areas for improvement.</li>
+                <li>Implement improvements and measure the impact on performance.</li>
+            </ol>
+            <h4>Measure of Success 3</h4>
+            <p>
+                A quantifiable increase in the accuracy and efficiency of the 'smart crop' feature, as evidenced by data from the metrics dashboard.
+            </p>
+            <h4>Reflection 3</h4>
+            <p>
+                The optimization of the 'smart crop' feature required a methodical and analytical approach.
+
+                Establishing a metrics dashboard and conducting weekly performance reviews helped in pinpointing improvement areas.
+
+                My success in implementing enhancements that led to a measurable increase in accuracy and efficiency of the 'smart crop' feature is a testament to the effectiveness of informed analysis and focused action.
+
+                This experience has honed my skills in data-driven decision-making and underscored the importance of continuous evaluation and refinement in technology.
+            </p>
+
+            <!-- Learning Goal 4 -->
+            <h4>Learning Goal 4</h4>
+            <p> Debug and Enhance the Mobile Application</p>
+            <h4>Action Plan 4</h4>
+            <ol>
+                <li>Prioritize bugs based on user impact and technical complexity.</li>
+                <li>Dedicate a set number of hours each week to focus on resolving these issues.</li>
+                <li>Document each problem-solving process to create a reference for future bugs.</li>
+            </ol>
+            <h4>Measure of Success 4</h4>
+            <p>
+                Resolution of the targeted bugs, confirmed by post-deployment monitoring and user feedback indicating improved app performance and stability.
+            </p>
+            <h4>Reflection 4</h4>
+            <p>
+                Debugging and enhancing the mobile application was an exercise in meticulous problem-solving.
+
+                Prioritizing bugs and allocating dedicated time for resolution honed my technical troubleshooting skills.
+
+                Documenting each problem-solving process not only aided in resolving current issues but also created a valuable reference for future challenges.
+
+                The subsequent improvement in app performance and stability, as evidenced by user feedback, validates the effectiveness of a structured and systematic approach to problem resolution.
+            </p>
+
+            <!-- Learning Goal 5 -->
+            <h4>Learning Goal 5</h4>
+            <p>Proficiency in Kotlin for Android Development</p>
+            <h4>Action Plan 5</h4>
+            <ol>
+                <li>Complete an introductory course on Kotlin within the work term.</li>
+                <li>Read up on Kotlin documentation as I continue working with Kotlin code.</li>
+                <li>Apply Kotlin skills to real-world tasks in the app by fixing minor bugs or adding small features.</li>
+                <li>Gradually take on more complex development work in Kotlin as proficiency improves.</li>
+            </ol>
+            <h4>Measure of Success 5</h4>
+            <p>
+                Successfully committing and pushing code to the Android application's production repository that resolves bugs or adds features, demonstrating effective use of Kotlin.
+            </p>
+            <h4>Reflection 5</h4>
+            <p>
+                Achieving proficiency in Kotlin for Android development was a gradual but rewarding process.
+
+                Starting with an introductory course and continuously engaging with Kotlin documentation allowed for a solid foundational understanding.
+
+                Applying these skills in real-world tasks and progressively tackling more complex development work exemplifies practical learning.
+
+                Successfully committing and pushing code that resolved bugs or added features demonstrates not just proficiency in Kotlin but also adaptability and a keenness to embrace new challenges in technology.
+            </p>
+        </section>
+
+        <section id="job-description">
+            <h2>Job Description</h2>
+            <img src="../images/job_response.jpg" alt="A Photo of Someone Writing a Job Description" id="job-response-photo">
+            <p>
+                As a mobile developer at Oriole AI Inc., my role was multifaceted and dynamic, encompassing a range of responsibilities that required both technical expertise and creative thinking. Here's an expanded overview of my key responsibilities:
+            </p>
+            <ul>
+                <li><strong>New Feature Development and Bug Fixing:</strong> Tasked with both creating innovative features for the mobile apps and addressing and resolving any functional or performance issues, ensuring a seamless user experience.</li>
+                <li><strong>Leveraging Cloud Services:</strong> Utilized cloud services to enhance app functionality, improve scalability, and ensure reliable data management and processing.</li>
+                <li><strong>Artificial Intelligence Integration:</strong> Incorporated AI technology to elevate the application experience, introducing intelligent features that catered to user needs and preferences.</li>
+                <li><strong>Task Management and Prioritization:</strong> Effectively managed and prioritized development tasks, balancing immediate needs with long-term project goals.</li>
+                <li><strong>Team Coordination and Communication:</strong> Communicated the level of effort required for development tasks and delegated tasks appropriately, ensuring efficient teamwork and project progression.</li>
+                <li><strong>Third-party Service Integration:</strong> Integrated various third-party services and systems into the mobile app, enhancing its capabilities and user options.</li>
+                <li><strong>Research and Innovation:</strong> Conducted research into new technologies and libraries that could be leveraged to create novel features or product offerings, keeping our app at the forefront of innovation.</li>
+                <li><strong>Enhancing User Experience for Subscription Growth:</strong> Focused on improving user experience to drive product subscriptions, understanding that a satisfied user is more likely to invest in our product.</li>
+                <li><strong>Strategic Feature Development:</strong> Considered the business impact and strategic positioning of new features, ensuring that each development was aligned with the company's vision and goals.</li>
+                <li><strong>Value Communication:</strong> Developed strategies to communicate the value of new developments to users, tailoring our message for various use cases to maximize engagement and understanding.</li>
+                <li><strong>Build Management and Deployment:</strong> Managed builds and oversaw deployment processes, ensuring that updates and new features were smoothly integrated and released.</li>
+                <li><strong>Documentation:</strong> Maintained comprehensive documentation of development processes, providing a clear guide for future development efforts and team members.</li>
+                <li><strong>Marketing Support:</strong> Created promotional videos to showcase the product, contributing to marketing efforts and user engagement.</li>
+                <li><strong>Hardware Integration:</strong> Worked on interfacing with hardware that integrates with the application, supporting new device development and expanding the app's ecosystem.</li>
+            </ul>
+            <p>
+                Collaboration was the cornerstone of my experience at Oriole AI Inc.
+
+                The opportunity to bridge the gap between technical and non-technical domains, particularly in the context of mobile development, was both a challenge and a rewarding aspect of my role.
+            </p>
+            <p>
+                The skills required for this job were diverse, ranging from technical proficiencies in cloud services and AI integration to soft skills like team coordination and effective communication.
+
+                While my academic background at the University of Guelph provided a solid foundation in these areas, the hands-on experience gained during this work-term was invaluable.
+
+                It not only reinforced my existing skills but also introduced me to new technologies and approaches, emphasizing the importance of adaptability and continuous learning in the fast-evolving field of mobile development.
+            </p>
+        </section>
+
+        <section id="conclusions">
+            <h2>Conclusions</h2>
+            <p>
+                This website serves as a comprehensive reflection of my enriching work-term experience at Oriole A.I. Inc.
+
+                If I were to distill the essence of what I'd like my audience to remember, it would be the integration of advanced technologies in mobile development and the profound impact of collaborative innovation.
+            </p>
+            <p>
+                At Oriole A.I., I immersed myself in a world where cutting-edge artificial intelligence and cloud services intersected with mobile app development.
+
+                The key takeaway from my experience is the importance of blending technical prowess with creative problem-solving.
+
+                This role not only challenged me to apply my academic knowledge in a real-world setting but also to adapt and evolve in the face of new technologies and methodologies.
+            </p>
+            <p>
+                Through my journey, I learned the significance of user-centric design, the strategic implementation of AI and cloud technologies, and the art of balancing feature development with practical, market-driven considerations.
+
+                My time at Oriole A.I. underscored the dynamic nature of the tech industry and the endless possibilities for innovation and growth.
+            </p>
+            <p>
+                If my audience were to describe the contents of this website, I hope they would speak of a story of a passionate software engineer who embraced challenges, contributed meaningfully to a forward-thinking company, and grew both professionally and personally in the process.
+            </p>
+        </section>
+
+        <section id="acknowledgments">
+            <h2>Acknowledgments</h2>
+            <p>
+                I would like to extend my sincerest gratitude to several key individuals and groups who played a crucial role during my work-term at Oriole A.I.
+            </p>
+            <p>
+                Firstly, to my team at Oriole A.I., for their unwavering support, mentorship, and collaboration.
+
+                The camaraderie and collective intelligence of this team made every challenge a learning opportunity and every success a shared triumph.
+            </p>
+            <p>
+                Special thanks to my supervisors and mentors at Oriole A.I., whose guidance was instrumental in navigating the complexities of mobile development and AI integration.
+
+                Their expertise and constructive feedback were invaluable to my professional development.
+            </p>
+            <p>
+                I am also grateful to my peers and colleagues for fostering a stimulating work environment, filled with lively discussions and innovative brainstorming sessions.
+
+                Their perspectives and insights enriched my understanding and approach to various projects.
+            </p>
+            <p>
+                Lastly, I acknowledge the role of my academic training at the University of Guelph, which laid the foundation for my technical skills and problem-solving abilities.
+
+                This work-term experience has been a testament to the practical application of academic learning in a professional setting.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Website made by Ali Riayde Jawad - Software Engineering Student at the University of Guelph</p>
+    </footer>
+
+</body>
+
+</html>
