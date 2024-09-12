@@ -75,8 +75,22 @@ a:hover {
     margin: 0 auto;
 }
 
+#dna-photo1 {
+    max-width: 400px;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
 #job-response-photo {
     max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#job-description-photo {
+    max-width: 400px;
+    max-height: 400px;
     display: block;
     margin: 0 auto;
 }
